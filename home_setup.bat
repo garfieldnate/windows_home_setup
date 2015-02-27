@@ -63,7 +63,6 @@ cinst winscp
 cinst grepwin
 cinst lockhunter
 cinst dependencywalker
-cinst nsis
 cinst windirstat
 
 rem java
@@ -77,8 +76,6 @@ cinst gradle
 rem web
 cinst nodejs.install
 cinst Brackets
-
-
 
 rem configure git
 git config --global user.name "Nathan Glenn"
@@ -107,6 +104,7 @@ echo "if there is a windows.old folder, copy the iCare recovery kit installation
 echo "remove extraneous startup programs (such as Skype) via msconfig"
 echo "customize startup menu to show run command, downloads and favorites"
 echo "add workspace(s) and dev to favorites"
+echo "add saved searches for Today and This Week to favorites"
 echo "set explorer options:"
 echo "   show hidden files"
 echo "   show protected files"
@@ -144,3 +142,4 @@ echo "   MySQL/PostgreSQL"
 echo "   Android Studio"
 echo "   lessmsi"
 echo "   open freely"
+echo "   nsis"
