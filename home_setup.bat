@@ -1,5 +1,6 @@
 rem This is my batch script and master plan for setting up a
-rem new/recently wiped Windows computer.
+rem new/recently wiped Windows computer. Please review the
+rem document and edit as desired before running.
 
 rem Before wiping out your computer, make sure to back up:
 rem    My Documents (which contains Calibre books)
@@ -40,7 +41,6 @@ cinst miktex
 
 rem productivity
 cinst virtuawin
-cinst stexbar
 cinst launchy
 
 rem general development and utilities
@@ -51,7 +51,7 @@ cinst tortoisesvn
 cinst git-credential-winstore
 cinst console-devel
 cinst notepadplusplus
-cinst sublimetext2
+cinst sublimetext3
 cinst poshgit
 cinst putty
 cinst sysinternals
@@ -69,25 +69,20 @@ git config --global user.name "Nathan Glenn"
 git config --global user.email "garfieldnate@gmail.com"
 git config --global merge.tool kdiff3
 git config --global diff.tool kdiff3
-git config --global core.editor "'c:/program files/sublime text 2/sublime_text.exe' -w"
+git config --global core.editor "'C:/program files/sublime text 3/subl.exe' -w"
 
 rem synch Sublime Text settings via DropBox
-mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 2\Installed Packages" "C:\Users\Nate\Dropbox\appdata\sublime\Installed Packages"
-mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 2\Packages" "C:\Users\Nate\Dropbox\appdata\sublime\Packages"
-mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 2\Pristine Packages" "C:\Users\Nate\Dropbox\appdata\sublime\Pristine Packages"
+mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 3\Installed Packages" "C:\Users\Nate\Dropbox\appdata\Sublime Text 3\Installed Packages"
+mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 3\Packages" "C:\Users\Nate\Dropbox\appdata\Sublime Text 3\Packages"
+mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 3\Pristine Packages" "C:\Users\Nate\Dropbox\appdata\Sublime Text 3\Pristine Packages"
 
 rem java
 rem this also installs the JRE
 cinst jdk8
-cinst eclipse-standard-kepler
+cinst eclipse
 cinst ant
 cinst maven
 cinst gradle
-
-rem native
-cinst mingw
-rem currently outdated
-cinst cmake
 
 rem web
 cinst nodejs.install
@@ -117,6 +112,8 @@ echo "   show full path in title bar"
 echo "sign into DropBox and Evernote"
 
 echo "Download/install the following by hand:"
+echo "   todotxt.net"
+echo "   master password"
 echo "   Visual Studio"
 echo "   DirectX (SDK)"
 echo "   Microsft Office (http://www.heidoc.net/joomla/technology-science/microsoft/51-office-2007-direct-download-links)"
@@ -128,11 +125,12 @@ echo "   DTA plugin for Firefox"
 echo "   Flash plugin(s)"
 echo "   Java plugin(s)"
 echo "   keytweak; switch ctrl and caps lock"
-echo "   portable versions of Strawberry Perl: 5.16, 5.18, 5.20"
+echo "   berrybrew with several Perl versions: 5.16, 5.18, 5.20"
 echo "   Microsoft updates (make sure DirectX and SDK are installed first!)"
 
 echo "---------------------"
 echo "other programs that might be nice/necessary:"
+echo "   ManicTime"
 echo "   WinHTTrack"
 echo "   TikzEdit"
 echo "   GrammarScope"
