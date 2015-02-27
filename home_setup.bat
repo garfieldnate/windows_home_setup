@@ -64,18 +64,6 @@ cinst dependencywalker
 cinst nsis
 cinst windirstat
 
-rem configure git
-git config --global user.name "Nathan Glenn"
-git config --global user.email "garfieldnate@gmail.com"
-git config --global merge.tool kdiff3
-git config --global diff.tool kdiff3
-git config --global core.editor "'C:/program files/sublime text 3/subl.exe' -w"
-
-rem synch Sublime Text settings via DropBox
-mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 3\Installed Packages" "C:\Users\Nate\Dropbox\appdata\Sublime Text 3\Installed Packages"
-mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 3\Packages" "C:\Users\Nate\Dropbox\appdata\Sublime Text 3\Packages"
-mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 3\Pristine Packages" "C:\Users\Nate\Dropbox\appdata\Sublime Text 3\Pristine Packages"
-
 rem java
 rem this also installs the JRE
 cinst jdk8
@@ -88,8 +76,21 @@ rem web
 cinst nodejs.install
 cinst Brackets
 
-rem softlink ~/.dzil to dropbox [TODO: make it a CPAN module instead]
+
+
+rem configure git
+git config --global user.name "Nathan Glenn"
+git config --global user.email "garfieldnate@gmail.com"
+git config --global merge.tool kdiff3
+git config --global diff.tool kdiff3
+git config --global core.editor "'C:/program files/sublime text 3/subl.exe' -w"
+
+rem synch Sublime Text settings, dzil profile, and mpw profile via DropBox
+mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 3\Installed Packages" "C:\Users\Nate\Dropbox\appdata\Sublime Text 3\Installed Packages"
+mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 3\Packages" "C:\Users\Nate\Dropbox\appdata\Sublime Text 3\Packages"
+mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 3\Pristine Packages" "C:\Users\Nate\Dropbox\appdata\Sublime Text 3\Pristine Packages"
 mklink /D "C:\Users\nate\.dzil" "C:\Users\Nate\Dropbox\appdata\.dzil"
+mklink /D "C:\Users\nate\.mpw.d" "C:\Users\Nate\Dropbox\appdata\.mpw.d"
 
 echo "---------------------"
 echo "Done. Please do not open Sublime Text until DropBox is finished synching."
