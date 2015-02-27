@@ -20,7 +20,7 @@ rem Before using Sublime Text or dzil, sign in to DropBox and allow
 rem some time for synching (so you don't overwrite the configuration
 rem in DropBox).
 
-rem install non-dev stuff first so I can play while the dev stuff installs
+rem non-dev stuff; install first so I can play while the dev stuff installs
 cinst GoogleChrome
 cinst Evernote5
 cinst dropbox
@@ -37,13 +37,16 @@ cinst calibre
 cinst youtube-dl
 cinst vlc
 cinst spotify
-cinst miktex
+cinst f.lux
 
 rem productivity
 cinst virtuawin
 cinst launchy
 
 rem general development and utilities
+cinst sublimetext3
+cinst pandoc
+cinst miktex
 cinst kdiff3
 cinst git
 cinst sliksvn
@@ -51,7 +54,6 @@ cinst tortoisesvn
 cinst git-credential-winstore
 cinst console-devel
 cinst notepadplusplus
-cinst sublimetext3
 cinst poshgit
 cinst putty
 cinst sysinternals
