@@ -42,6 +42,11 @@ cinst f.lux
 rem productivity
 cinst virtuawin
 cinst launchy
+cinst autohotkey
+rem copy autohotkey scripts to C:\dev and run on startup
+xcopy ahkScripts C:\dev\ahkScripts
+mklink "C:\Users\Nate\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\disable_mousepad_when_typing.ahk"  "C:\dev\ahkScripts\disable_mousepad_when_typing.ahk"
+mklink "C:\Users\Nate\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\paste_as_plaintext.ahk"  "C:\dev\ahkScripts\paste_as_plaintext.ahk"
 
 rem general development and utilities
 cinst sublimetext3
