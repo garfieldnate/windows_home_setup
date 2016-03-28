@@ -88,6 +88,7 @@ git config --global user.email "garfieldnate@gmail.com"
 git config --global merge.tool kdiff3
 git config --global diff.tool kdiff3
 git config --global core.editor "'C:/program files/sublime text 3/subl.exe' -w"
+git config core.longpaths true
 
 rem synch Sublime Text settings, dzil profile, and mpw profile via DropBox
 mklink /D "C:\Users\nate\AppData\Roaming\Sublime Text 3\Installed Packages" "C:\Users\Nate\Dropbox\appdata\Sublime Text 3\Installed Packages"
